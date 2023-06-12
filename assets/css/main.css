@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Phlegm';
+    src: url('https://static1.squarespace.com/static/5d3965f5907bfa0001353068/t/62791aa2dbce65667f105d24/1652103842535/Phlegm-Headlines.woff');
+    font-style: normal;
+    font-weight: normal;
+}
+h1 {
+  font-family: 'Phlegm' !important;
+}
