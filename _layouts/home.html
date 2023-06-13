@@ -4,13 +4,13 @@ layout: default
 <div class="grid grid-cols-2 gap-4 w-full min-h-full">
   {% for post in site.posts %}
     <a href="{{ post.url }}">
-      <div class="preview-image bg-cover bg-center w-full h-80 text-neutral-50 bg-neutral-950 bg-[url('https://djmag.com/sites/default/files/styles/djm_23_1035x582_jpg/public/2022-04/Overmono%20Header_1.jpg')]">
+      <div class="prev-img bg-cover bg-center w-full h-80 text-neutral-50 bg-neutral-950 bg-[url('https://djmag.com/sites/default/files/styles/djm_23_1035x582_jpg/public/2022-04/Overmono%20Header_1.jpg')]">
         <div class="w-full h-full flex items-stretch">
           {% assign parts = post.title | split: ": " %}
           <div class="self-end p-4">
-            <h3 class="preview-text">{{ parts.first }}</h3>
+            <h3 class="prev-txt">{{ parts.first }}</h3>
             {% assign last = parts.last %}
-            {% if last.size > 10 %} <h1 class="preview-text text-4xl">{{ parts.last }}</h1> {% else %} <h1 class="preview-text text-5xl">{{ parts.last }}</h1> {% endif %}
+            {% if last.size > 10 %} <h1 class="prev-txt text-4xl">{{ parts.last }}</h1> {% else %} <h1 class="prev-txt text-5xl">{{ parts.last }}</h1> {% endif %}
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@ layout: default
 <script>
 // Specific images
 BackgroundCheck.init({
-  targets: '.preview-text',
-  images: '.preview-image'
+  targets: '.prev-txt',
+  images: '.prev-img'
 });
 </script>
