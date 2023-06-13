@@ -4,8 +4,8 @@ layout: default
 <div class="grid grid-cols-2 gap-4 w-full min-h-full">
   {% for post in site.posts %}
     <a href="{{ post.url }}">
+      <img src="https://djmag.com/sites/default/files/styles/djm_23_1035x582_jpg/public/2022-04/Overmono%20Header_1.jpg" class="object-cover">
       <div class="w-full h-80 text-neutral-50 bg-neutral-950 flex items-stretch">
-        <img src="https://djmag.com/sites/default/files/styles/djm_23_1035x582_jpg/public/2022-04/Overmono%20Header_1.jpg" class="object-cover h-48 w-96 ...">
         {% assign parts = post.title | split: ": " %}
         <div class="self-end p-4">
           <h3>{{ parts.first }}</h3>
