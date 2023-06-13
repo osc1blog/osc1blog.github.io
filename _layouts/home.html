@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
-<ul>
+<div class="grid grid-cols-2 gap-4 w-full">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
-    </li>
+    <div>
+      <a href="{{ post.url }}" class="w-full h-1/2">
+        <h1>{{ post.title }}</h1>
+      </a>
+    </div>
   {% endfor %}
-</ul>
+</div>
