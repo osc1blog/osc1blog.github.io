@@ -15,9 +15,7 @@
 }
 h1 {
     font-family: 'Phlegm';
-    text-shadow:
-        -1px -1px 0 #262626,  
-        1px -1px 0 #262626,
-        -1px 1px 0 #262626,
-         1px 1px 0 #262626;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #171717;
 }
