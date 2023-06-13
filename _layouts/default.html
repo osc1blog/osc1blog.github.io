@@ -4,17 +4,16 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <nav>
       <a href="/">Home</a>
-      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
     </nav>
     
     <ul>
       {% for post in site.posts %}
-        <li class="w-full h-32 bg-neutral-950 text-neutral-50">
+        <li>
           <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
       {% endfor %}
