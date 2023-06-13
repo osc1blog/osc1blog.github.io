@@ -7,7 +7,12 @@ layout: default
       <a href="{{ post.url }}" class="w-full h-full">
         {% assign parts = post.title | split: ": " %}
         <h3>{{ parts.first }}</h3>
-        <h1 class="text-5xl">{{ parts.last }}</h1>
+        {% assign last = parts.last %}
+        {% if last.size > 10 %}
+          <h1 class="text-4xl">{{ parts.last }}</h1>
+        {% else %}
+          <h1 class="text-5xl">{{ parts.last }}</h1>
+        {% endif %}
       </a>
     </div>
   {% endfor %}
