@@ -13,13 +13,18 @@
     font-style: normal;
     font-weight: normal;
 }
-@font-face {
-    font-family: 'Kaftan';
-    src: url('Kaftan-Serif.woff');
-    font-weight: 500;
-    font-style: normal;
+h1 {
+    font-family: 'Phlegm';
 }
-h1, h2 {
-    font-family: 'Kaftan';
-    mix-blend-mode: difference;
+
+h1.background--light, h2.background--light, h3.background--light {
+  color: black;
+}
+
+h1.background--dark, h2.background--dark, h3.background--dark {
+  color: white;
+}
+
+h1.background--complex, h2.background--complex, h3.background--complex {
+  color: gray;
 }
