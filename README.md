@@ -1,2 +1,2 @@
 # This is the Jekyll blog behind OSC1
-### An independent avant-garde music blog covering both the musical and the social aspects of the art.
+### An independent music blog covering both the creative and the social sides of avant-garde music.
