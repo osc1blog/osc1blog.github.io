@@ -2,10 +2,8 @@
 ---
 
 @import "{{ site.theme }}";
-.main-content {
-  h1 {
-   color: #ff0000;
- }
+h2 {
+  color: green;  
 }
 @font-face {
     font-family: 'Phlegm';
@@ -13,8 +11,8 @@
     font-style: normal;
     font-weight: normal;
 }
-.main-content {
-    h1 {
-      font-family: 'Phlegm';
-    }
+h1 {
+  font-family: 'Phlegm';
+  color: #ff0000;
 }
+
