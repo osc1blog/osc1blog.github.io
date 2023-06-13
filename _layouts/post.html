@@ -1,8 +1,14 @@
 ---
+layout: default
 ---
-<p>{{ page.date }} - Written by {{ page.author }}</p>
+<div class="post">
+  <p>{{ page.date }} - Written by {{ page.author }}</p>
+  
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
 
-{{ content }}
-
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAABBBBBB
+  <article class="post-content">
+    {{ content }}
+  </article>
+</div>
