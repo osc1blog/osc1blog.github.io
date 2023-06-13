@@ -11,21 +11,17 @@
       <a href="/">Home</a>
       <a href="/blog/">Blog</a>
     </nav>
-    <h1 class="text-red-500">{{ page.title }}</h1>
-    <section>
-      {{ content }}
-    </section>
     
     <ul>
       {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
+        <li class="w-full h-32 bg-pink-950">
+          <a href="{{ post.url }}"><h1 class="text-neutral-100">{{ post.title }}</h1></a>
         </li>
       {% endfor %}
     </ul>
     
     <footer>
-      &copy; to me
+      Made by me, powered by Github.
     </footer>
   </body>
 </html>
