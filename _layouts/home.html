@@ -5,7 +5,7 @@ layout: default
   {% for post in site.posts %}
     <div class="w-full h-1/2 text-neutral-50 bg-neutral-950">
       <a href="{{ post.url }}" class="w-full h-full">
-        {% assign parts = page.title | split: ": " %}
+        {% assign parts = post.title | split: ": " %}
         <h3>{{ parts.first }}</h3>
         <h1 class="text-5xl">{{ parts.last }}</h1>
       </a>
