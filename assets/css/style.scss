@@ -15,16 +15,9 @@
 }
 h1 {
     font-family: 'Phlegm';
-}
-
-h1.background--light {
-  color: black;
-}
-
-h1.background--dark {
-  color: white;
-}
-
-h1.background--complex {
-  color: gray;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
 }
