@@ -3,13 +3,8 @@
   {% include head.html %}
   <body>
     {% include nav.html %}
-    <ul>
-      {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
-        </li>
-      {% endfor %}
-    </ul>
+    
+    {{ content }}
     
     <footer>
       Made by me, powered by Github.
