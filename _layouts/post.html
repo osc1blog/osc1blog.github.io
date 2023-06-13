@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="post">
   {% assign author = site.authors | where: 'short_name', page.author | first %}
-  <p>{{ page.date | date: "%-d %B %Y" }} | Written by {{ author.name }}</p>
+  <p>{{ page.date | date: "%-d %B %Y" }} | By: {{ author.name }}</p>
   
   <header class="post-header">
     {% assign parts = page.title | split: ": " %}
