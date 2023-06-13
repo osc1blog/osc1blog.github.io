@@ -1,4 +1,4 @@
 ---
-title: OSC1 - Music Blog
+title: OSC1 - Avant-Garde Music Blog
 layout: home
 ---
