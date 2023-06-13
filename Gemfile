@@ -35,5 +35,3 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 # Without adding this I got the following error:
 # cannot load such file -- webrick (LoadError)
 gem "webrick"
-
-gem "jekyll-postcss"
