@@ -14,8 +14,9 @@
     
     <ul>
       {% for post in site.posts %}
-        <li class="w-full h-32 bg-pink-950">
-          <a href="{{ post.url }}"><h1 class="text-neutral-100">{{ post.title }}</h1></a>
+        <li class="w-full h-32 bg-neutral-950 text-neutral-50">
+          <h3>{{ post.typename }}</h3>
+          <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
         </li>
       {% endfor %}
     </ul>
