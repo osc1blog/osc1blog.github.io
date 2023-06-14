@@ -1,15 +1,6 @@
 ---
 layout: default
 ---
-<script>
-// Check all elements with a .target class against all images on a page
-BackgroundCheck.init({
-  targets: '.target',
-  images: '.image'
-});
-  // All targets
-BackgroundCheck.refresh();
-</script>
 <div class="grid grid-cols-2 gap-4 w-full min-h-full">
   {% for post in site.posts %}
     <a href="{{ post.url }}">
@@ -26,13 +17,3 @@ BackgroundCheck.refresh();
     </a>
   {% endfor %}
 </div>
-
-<script>
-// Check all elements with a .target class against all images on a page
-BackgroundCheck.init({
-  targets: '.target',
-  images: '.image'
-});
-  // All targets
-BackgroundCheck.refresh();
-</script>
