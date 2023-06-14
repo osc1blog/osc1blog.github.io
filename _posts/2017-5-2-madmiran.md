@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Get to know: Pyne"
+title:  "Get to know: Mad Miran"
 author: jordy
 image: /assets/img/madmiran.jpg
 ---
