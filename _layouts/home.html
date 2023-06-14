@@ -4,13 +4,13 @@ layout: default
 <div class="grid grid-cols-2 gap-4 w-full min-h-full">
   {% for post in site.posts %}
     <a href="{{ post.url }}">
-      <div class="image bg-cover bg-center w-full h-80 text-neutral-50 bg-neutral-950 bg-[url('/assets/img/overmono.jpg')]">
+      <div class="bg-cover bg-center w-full h-80 text-neutral-50 bg-neutral-950 bg-[url('/assets/img/overmono.jpg')]">
         <div class="w-full h-full flex items-stretch">
           {% assign parts = post.title | split: ": " %}
           <div class="self-end p-4">
-            <h3 class="target">{{ parts.first }}</h3>
+            <h3 class="text-lg leading-[1rem] bg-neutral-950">{{ parts.first }}</h3>
             {% assign last = parts.last %}
-            {% if last.size > 10 %} <h1 class="target text-4xl">{{ parts.last }}</h1> {% else %} <h1 class="target text-5xl">{{ parts.last }}</h1> {% endif %}
+            {% if last.size > 10 %} <h1 class="text-4xl leading-[2rem] bg-neutral-950">{{ parts.last }}</h1> {% else %} <h1 class="text-5xl leading-[2.4rem] bg-neutral-950">{{ parts.last }}</h1> {% endif %}
           </div>
         </div>
       </div>
