@@ -13,10 +13,9 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {font-family: 'EurostileUnicase'; src: url("//db.onlinewebfonts.com/t/e2aba67a61a20987775ae4a14c15dd81.eot"); src: url("//db.onlinewebfonts.com/t/e2aba67a61a20987775ae4a14c15dd81.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e2aba67a61a20987775ae4a14c15dd81.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e2aba67a61a20987775ae4a14c15dd81.woff") format("woff"), url("//db.onlinewebfonts.com/t/e2aba67a61a20987775ae4a14c15dd81.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e2aba67a61a20987775ae4a14c15dd81.svg#EurostileUnicaseLTW04-Rg") format("svg"); } 
 h1 {
-    font-family: 'Phlegm';
-    -webkit-text-fill-color: #fff;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: #171717;
-    paint-order: stroke fill;
+    font-family: 'EurostileUnicase';
+    color: #fff;
+    background: #000;
 }
