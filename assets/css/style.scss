@@ -14,8 +14,26 @@
     font-weight: normal;
 }
 @font-face {
+    font-family: 'Lausanne-300';
+    src: url('../fonts/TWKLausanne-300.woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
     font-family: 'Lausanne-400';
     src: url('../fonts/TWKLausanne-400.woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Lausanne-600';
+    src: url('../fonts/TWKLausanne-600.woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Lausanne-1000';
+    src: url('../fonts/TWKLausanne-1000.woff2');
     font-style: normal;
     font-weight: normal;
 }
@@ -24,5 +42,5 @@ h1 {
     font-family: 'EurostileUnicase';
 }
 p {
-    font-family: 'Lausanne-400';
+    font-family: 'Lausanne-300';
 }
