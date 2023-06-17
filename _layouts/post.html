@@ -1,14 +1,13 @@
 ---
 layout: default
 ---
-<div class="post">
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  <p>{{ page.date | date: "%-d %B %Y" }} | By: {{ author.name }}</p>
-  
+<div class="post">  
   <header class="post-header">
     {% assign parts = page.title | split: ": " %}
     <h3 class="text-2xl font-['Lausanne-300']">{{ parts.first }}</h3>
     <h1 class="post-title font-['Lausanne-1000'] uppercase text-7xl">{{ parts.last }}</h1>
+    {% assign author = site.authors | where: 'short_name', page.author | first %}
+    <p>{{ page.date | date: "%-d %B %Y" }} | By: {{ author.name }}</p>
     <img src="{{ page.image | relative_url }}" />
   </header>
 
