@@ -1,4 +1,5 @@
 ---
 title: OSC1 | Avant-Garde Music Blog
 layout: features
+permalink: /features/
 ---
