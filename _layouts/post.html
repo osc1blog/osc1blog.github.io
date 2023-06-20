@@ -2,19 +2,22 @@
 layout: default
 ---
 <div class="post">
-  <div class="grid grid-cols-2 grid-rows-1 w-full h-[100vh]">
-    <img class="h-full object-cover <!--place-self-center-->" src="{{ page.image | relative_url }}" />
-    <div class="px-4 pt-[calc(5.7rem+24px)]">
-      <header class="post-header">
+  <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 w-full h-[100vh]">
+    <img class="order-last md:order-none h-full object-cover <!--place-self-center-->" src="{{ page.image | relative_url }}" />
+    <div class="order-first md:order-none px-4 pt-[calc(5.7rem+24px)] flex items-stretch">
+      <header class="post-header self-center">
         {% assign parts = page.title | split: ": " %}
-        <h3 class="text-4xl font-['Lausanne-300'] tracking-wide">{{ parts.first }}</h3>
-        <h1 class="post-title font-['Lausanne-600'] uppercase text-9xl tracking-wide">{{ parts.last }}</h1>
+        <h3 class="text-4xl dark:text-[#e3e5e3] font-['Lausanne-300'] tracking-wide">{{ parts.first }}</h3>
+        <h1 class="post-title font-['Lausanne-600'] uppercase text-8xl tracking-wide">{{ parts.last }}</h1>
+        <p class="tracking-wider dark:text-[#e3e5e3]">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.
+        </p>
         {% assign author = site.authors | where: 'short_name', page.author | first %}
-        <p class="tracking-wider">{{ page.date | date: "%-d %B %Y" }} | Written by {{ author.name }}</p>
+        <p class="tracking-wider dark:text-[#e3e5e3] mt-32">{{ page.date | date: "%-d %B %Y" }} | Written by {{ author.name }}</p>
       </header>
     </div>
   </div>
-  <article class="post-content grid grid-cols-6 py-24">
+  <article class="post-content grid grid-cols-6 py-24 tracking-wide">
     <div class="col-span-1"></div>
     <div class="col-span-4">{{ content }}</div>
     <div class="col-span-1"></div>
