@@ -4,7 +4,7 @@ layout: default
 <div class="post">
   <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 w-full h-[100vh]">
     <img class="order-last md:order-none h-full object-cover <!--place-self-center-->" src="{{ page.image | relative_url }}" />
-    <div class="order-first md:order-none px-4 pt-[calc(5.7rem+24px)] flex items-stretch">
+    <div class="order-first md:order-none px-8 pt-[calc(5.7rem+24px)] flex items-stretch">
       <header class="post-header self-center">
         {% assign parts = page.title | split: ": " %}
         <h3 class="text-4xl dark:text-[#e3e5e3] font-['Lausanne-300'] tracking-wide">{{ parts.first }}</h3>
